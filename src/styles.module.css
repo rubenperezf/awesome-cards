@@ -1,9 +1,72 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.container {
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 20px;
+  position: relative;
+}
+.informationIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px
+}
+
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.avatarContainer {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px
+}
+.avatarImage {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%
+}
+.topImage {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px
+}
+.textContainer {
+  padding: 20px;
+}
+.mainTitle {
+  padding-bottom: 20px;
+  font-weight: bold !important;
+  font-size: 26px !important
+
+}
+.subtitle {
+  padding-bottom: 20px;
+  font-size: 18px !important
+}
+.mainButtonContainer {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 20px
+  /* height: 200px */
+}
+.mainButton {
+  width: 40px;
+  height: 30px
+}
+.labelButton {
+  text-transform: capitalize;
+  color: "white"
+}
+.loadingBar {
+  position: absolute;
+  bottom: -18px
 }
