@@ -26,7 +26,7 @@ export const AwesomeCard = ({
   informationIcon,
   iconColor,
   tooltipText,
-  avatarBackground,
+  avatarBackgroundColor,
   avatarImage,
   topImageSrc,
   title,
@@ -39,7 +39,6 @@ export const AwesomeCard = ({
   mainButtonSpinner = false,
   mainButtonDisabled = false,
   mainButtonLinear = false,
-  linearProgressColor,
   ...props
 }) => {
   const [transition, setTransition] = useState(false)
@@ -77,7 +76,9 @@ export const AwesomeCard = ({
               justifyContent='center'
               alignItems='center'
               style={{
-                backgroundColor: avatarBackground ? avatarBackground : '#F5F5F5'
+                backgroundColor: avatarBackgroundColor
+                  ? avatarBackgroundColor
+                  : '#F5F5F5'
               }}
             >
               <img src={topImageSrc} className={classes.avatarImage} />
@@ -98,8 +99,8 @@ export const AwesomeCard = ({
             onClick={mainButtonFunc}
             variant='contained'
             style={{
-              backgroundColor: buttonBacgroundColor
-                ? buttonBacgroundColor
+              backgroundColor: buttonBackgroundColor
+                ? buttonBackgroundColor
                 : 'red'
             }}
             className={classes.mainButton}
