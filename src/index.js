@@ -45,10 +45,13 @@ export const AwesomeCard = ({
   const { linear } = useStyles(props)()
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = window.setTimeout(() => {
       setTransition(true)
     }, 200)
-  })
+    return () => {
+      window.clearTimeout(timeout)
+    }
+  }, [])
 
   return (
     <Grow in={transition}>
