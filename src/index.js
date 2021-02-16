@@ -33,7 +33,7 @@ export const AwesomeCard = ({
   subtitle,
   text,
   mainButtonText,
-  buttonBacgroundColor,
+  buttonBackgroundColor,
   buttonTextColor,
   mainButtonFunc,
   mainButtonSpinner = false,

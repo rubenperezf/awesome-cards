@@ -15,7 +15,7 @@ npm install --save awesome-cards
 ```jsx
 import React, { Component } from 'react'
 
-import AwesomeCards from 'awesome-cards'
+import { AwesomeCard } from 'awesome-cards'
 import 'awesome-cards/dist/index.css'
 
 export const MyComponent = () => {
