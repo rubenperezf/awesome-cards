@@ -54,6 +54,6 @@ export const MyComponent = () => {
 
 MIT © [rubenperezf](https://github.com/rubenperezf)
 
-## Review by
+## Reviewed by
 
 [rpeace](https://github.com/rpearce)
